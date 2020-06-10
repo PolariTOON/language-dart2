@@ -1,0 +1,3 @@
+[submodule "submodules/dart-syntax-highlight"]
+	path = submodules/dart-syntax-highlight
+	url = https://github.com/dart-lang/dart-syntax-highlight
