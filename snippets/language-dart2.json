@@ -1,0 +1,374 @@
+{
+	".source.dart": {
+		"library …;": {
+			"prefix": "library",
+			"description": "library declaration",
+			"body": "library ${1:name};$2"
+		},
+		"part '…';": {
+			"prefix": "part",
+			"description": "part directive",
+			"body": "part '${1:uri}';$2"
+		},
+		"part of …;": {
+			"prefix": "partof",
+			"description": "part declaration",
+			"body": "part of ${1:name};$2"
+		},
+		"of …": {
+			"prefix": "of",
+			"description": "of clause",
+			"body": "of ${1:name}$2"
+		},
+		"import '…';": {
+			"prefix": "import",
+			"description": "library import",
+			"body": "import '${1:uri}';$2"
+		},
+		"export '…';": {
+			"prefix": "export",
+			"description": "library export",
+			"body": "export '${1:uri}';$2"
+		},
+		"deferred as …": {
+			"prefix": "deferred",
+			"description": "deferred clause",
+			"body": "deferred as ${1:name}$2"
+		},
+		"as …": {
+			"prefix": "as",
+			"description": "as clause",
+			"body": "as ${1:name}$2"
+		},
+		"show …": {
+			"prefix": "show",
+			"description": "show clause",
+			"body": "show ${1:name}$2"
+		},
+		"hide …": {
+			"prefix": "hide",
+			"description": "hide clause",
+			"body": "hide ${1:name}$2"
+		},
+		"external …": {
+			"prefix": "external",
+			"description": "external modifier",
+			"body": "external $1"
+		},
+		"static …": {
+			"prefix": "static",
+			"description": "static modifier",
+			"body": "static $1"
+		},
+		"covariant …": {
+			"prefix": "covariant",
+			"description": "covariant modifier",
+			"body": "covariant $1"
+		},
+		"late …": {
+			"prefix": "late",
+			"description": "late modifier",
+			"body": "late $1"
+		},
+		"required …": {
+			"prefix": "required",
+			"description": "required modifier",
+			"body": "required $1"
+		},
+		"final …": {
+			"prefix": "final",
+			"description": "final declaration",
+			"body": "final ${1:name}$2"
+		},
+		"const …": {
+			"prefix": "const",
+			"description": "const declaration",
+			"body": "const ${1:name}$2"
+		},
+		"var …": {
+			"prefix": "var",
+			"description": "var declaration",
+			"body": "var ${1:name}$2"
+		},
+		"factory …(…) {…}": {
+			"prefix": "factory",
+			"description": "factory declaration",
+			"body": "factory ${1:name}($2) {\n\t$3\n}$4"
+		},
+		"call(…) {…}": {
+			"prefix": "call",
+			"description": "call declaration",
+			"body": "call($1) {\n\t$2\n}$3"
+		},
+		"operator …(…) {…}": {
+			"prefix": "operator",
+			"description": "operator overloading",
+			"body": "operator ${1:==}($2) {\n\t$3\n}$4"
+		},
+		"get … {…}": {
+			"prefix": "get",
+			"description": "getter",
+			"body": "get ${1:name} {\n\t$2\n}$3"
+		},
+		"set …(…) {…}": {
+			"prefix": "set",
+			"description": "setter",
+			"body": "set ${1:name}(${2:value}) {\n\t$3\n}$4"
+		},
+		"… …(…) {…}": {
+			"prefix": "void",
+			"description": "synchronous function declaration",
+			"body": "${1:Type} ${2:name}($3) {\n\t$4\n}$5"
+		},
+		"Future<…> …(…) async {…}": {
+			"prefix": "Future<void>",
+			"description": "asynchronous function declaration",
+			"body": "Future<${1:Type}> ${2:name}($3) async {\n\t$4\n}$5"
+		},
+		"Iterable<…> …(…) sync* {…}": {
+			"prefix": "Iterable<dynamic>",
+			"description": "synchronous generator function declaration",
+			"body": "Iterable<${1:Type}> ${2:name}($3) sync* {\n\t$4\n}$5"
+		},
+		"Stream<…> …(…) async* {…}": {
+			"prefix": "Stream<dynamic>",
+			"description": "asynchronous generator function declaration",
+			"body": "Stream<${1:Type}> ${2:name}($3) async* {\n\t$4\n}$5"
+		},
+		"{…}": {
+			"prefix": "sync",
+			"description": "synchronous function body",
+			"body": "{\n\t$1\n}$2"
+		},
+		"async {…}": {
+			"prefix": "async",
+			"description": "asynchronous function body",
+			"body": "async {\n\t$1\n}$2"
+		},
+		"sync* {…}": {
+			"prefix": "sync*",
+			"description": "synchronous generator function body",
+			"body": "sync* {\n\t$1\n}$2"
+		},
+		"async* {…}": {
+			"prefix": "async*",
+			"description": "asynchronous generator function body",
+			"body": "async* {\n\t$1\n}$2"
+		},
+		"typedef …;": {
+			"prefix": "typedef",
+			"description": "typedef declaration",
+			"body": "typedef ${1:Type};$2"
+		},
+		"abstract class … {…}": {
+			"prefix": "abstract",
+			"description": "abstract class declaration",
+			"body": "abstract class ${1:Type} {\n\t$2\n}$3"
+		},
+		"class … {…}": {
+			"prefix": "class",
+			"description": "class declaration",
+			"body": "class ${1:Type} {\n\t$2\n}$3"
+		},
+		"mixin … {…}": {
+			"prefix": "mixin",
+			"description": "mixin declaration",
+			"body": "mixin ${1:Type} {\n\t$2\n}$3"
+		},
+		"extension … on … {…}": {
+			"prefix": "extension",
+			"description": "extension declaration",
+			"body": "extension ${1:Type} on ${2:Type} {\n\t$3\n}$4"
+		},
+		"enum … {…}": {
+			"prefix": "enum",
+			"description": "enum declaration",
+			"body": "enum ${1:Type} {$2}$3"
+		},
+		"on …": {
+			"prefix": "on",
+			"description": "on clause",
+			"body": "on ${1:Type}$2"
+		},
+		"extends …": {
+			"prefix": "extends",
+			"description": "extends clause",
+			"body": "extends ${1:Type}$2"
+		},
+		"with …": {
+			"prefix": "with",
+			"description": "with clause",
+			"body": "with ${1:Type}$2"
+		},
+		"implements …": {
+			"prefix": "implements",
+			"description": "implements clause",
+			"body": "implements ${1:Type}$2"
+		},
+		"native": {
+			"prefix": "native",
+			"description": "native annotation",
+			"body": "native$1"
+		},
+		"try {…}": {
+			"prefix": "try",
+			"description": "try statement",
+			"body": "try {\n\t$1\n}$2"
+		},
+		"catch (…) {…}": {
+			"prefix": "catch",
+			"description": "catch clause",
+			"body": "catch (${1:exception}) {\n\t$2\n}$3"
+		},
+		"finally {…}": {
+			"prefix": "finally",
+			"description": "finally clause",
+			"body": "finally {\n\t$1\n}$2"
+		},
+		"switch (…) {…}": {
+			"prefix": "switch",
+			"description": "switch statement",
+			"body": "switch (${1:value}) {\n\t$1\n}$2"
+		},
+		"case …:": {
+			"prefix": "case",
+			"description": "case clause",
+			"body": "case ${1:constant}:$2"
+		},
+		"default:": {
+			"prefix": "default",
+			"description": "default clause",
+			"body": "default:$1"
+		},
+		"do {…} while (…);": {
+			"prefix": "do",
+			"description": "do statement",
+			"body": "do {\n\t$1\n} while (${2:condition});$3"
+		},
+		"while (…) {…}": {
+			"prefix": "while",
+			"description": "while statement",
+			"body": "while (${1:condition}) {\n\t$2\n}$3"
+		},
+		"return …;": {
+			"prefix": "return",
+			"description": "return statement",
+			"body": "return$1;$2"
+		},
+		"rethrow;": {
+			"prefix": "rethrow",
+			"description": "rethrow statement",
+			"body": "rethrow;$1"
+		},
+		"yield …;": {
+			"prefix": "yield",
+			"description": "yield statement",
+			"body": "yield ${1:value};$3"
+		},
+		"yield* …;": {
+			"prefix": "yieldeach",
+			"description": "yield-each statement",
+			"body": "yield* ${1:iterable};$3"
+		},
+		"break …;": {
+			"prefix": "break",
+			"description": "TODO",
+			"body": "break$1;$2"
+		},
+		"continue …;": {
+			"prefix": "continue",
+			"description": "break statement",
+			"body": "continue$1;$2"
+		},
+		"assert(…);": {
+			"prefix": "assert",
+			"description": "assert statement",
+			"body": "assert(${1:condition});$2"
+		},
+		"if (…) …": {
+			"prefix": "if",
+			"description": "if statement",
+			"body": "if (${1:condition}) ${2:value}$3"
+		},
+		"else …": {
+			"prefix": "else",
+			"description": "else clause",
+			"body": "else ${1:value}$2"
+		},
+		"else if (…) …": {
+			"prefix": "elseif",
+			"description": "else-if clause",
+			"body": "else if (${1:condition}) ${2:value}$3"
+		},
+		"for (…; …; …) …": {
+			"prefix": "for",
+			"description": "for statement",
+			"body": "for ($1; $2; $3) ${4:value}$5"
+		},
+		"for (… in …) …": {
+			"prefix": "forin",
+			"description": "for-in statement",
+			"body": "for (final ${1:name} in ${2:iterable}) ${3:value}$4"
+		},
+		"await for (… in …) …": {
+			"prefix": "awaitforin",
+			"description": "await-for-in statement",
+			"body": "await for (${1:name} in ${2:iterable}) ${3:value}$4"
+		},
+		"in …": {
+			"prefix": "in",
+			"description": "in clause",
+			"body": "in ${1:iterable}$2"
+		},
+		"is …": {
+			"prefix": "is",
+			"description": "positive type test",
+			"body": "is ${1:Type}$2"
+		},
+		"is! …": {
+			"prefix": "isnot",
+			"description": "negative type test",
+			"body": "is! ${1:Type}$2"
+		},
+		"throw …": {
+			"prefix": "throw",
+			"description": "throw expression",
+			"body": "throw ${1:exception}$2"
+		},
+		"await …": {
+			"prefix": "await",
+			"description": "await expression",
+			"body": "await ${1:future}$2"
+		},
+		"new …": {
+			"prefix": "new",
+			"description": "new expression",
+			"body": "new ${1:Type}($2)$3"
+		},
+		"main(…) {…}": {
+			"prefix": "main",
+			"description": "entry point declaration",
+			"body": "main($1) {\n\t$2\n}$3"
+		},
+		"deprecated": {
+			"prefix": "deprecated",
+			"body": "deprecated$1"
+		},
+		"override": {
+			"prefix": "override",
+			"body": "override$1"
+		},
+		"identical(…, …)": {
+			"prefix": "identical",
+			"body": "identical(${1:value}, ${2:value})$3"
+		},
+		"identityHashCode(…)": {
+			"prefix": "identityHashCode",
+			"body": "identityHashCode(${1:value})$2"
+		},
+		"print(…)": {
+			"prefix": "print",
+			"body": "print(${1:value})$2"
+		}
+	}
+}
