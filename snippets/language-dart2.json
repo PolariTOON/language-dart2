@@ -3,372 +3,457 @@
 		"library …;": {
 			"prefix": "library",
 			"description": "library declaration",
-			"body": "library ${1:name};$2"
+			"body": "library ${1:name};$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">library</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"part '…';": {
 			"prefix": "part",
 			"description": "part directive",
-			"body": "part '${1:uri}';$2"
+			"body": "part '${1:uri}';$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">part</span> <span class=\"syntax--string syntax--interpolated syntax--single syntax--dart\">'</span>…<span class=\"syntax--string syntax--interpolated syntax--single syntax--dart\">'</span><span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"part of …;": {
 			"prefix": "partof",
 			"description": "part declaration",
-			"body": "part of ${1:name};$2"
+			"body": "part of ${1:name};$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">part of</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"of …": {
 			"prefix": "of",
 			"description": "of clause",
-			"body": "of ${1:name}$2"
+			"body": "of ${1:name}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">of</span> …"
 		},
 		"import '…';": {
 			"prefix": "import",
 			"description": "library import",
-			"body": "import '${1:uri}';$2"
+			"body": "import '${1:uri}';$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">import</span> <span class=\"syntax--string syntax--interpolated syntax--single syntax--dart\">'</span>…<span class=\"syntax--string syntax--interpolated syntax--single syntax--dart\">'</span><span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"export '…';": {
 			"prefix": "export",
 			"description": "library export",
-			"body": "export '${1:uri}';$2"
+			"body": "export '${1:uri}';$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">export</span> <span class=\"syntax--string syntax--interpolated syntax--single syntax--dart\">'</span>…<span class=\"syntax--string syntax--interpolated syntax--single syntax--dart\">'</span><span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"deferred as …": {
 			"prefix": "deferred",
 			"description": "deferred clause",
-			"body": "deferred as ${1:name}$2"
+			"body": "deferred as ${1:name}$2",
+			"rightLabelHTML": "deferred <span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">as</span> …"
 		},
 		"as …": {
 			"prefix": "as",
 			"description": "as clause",
-			"body": "as ${1:name}$2"
+			"body": "as ${1:name}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">as</span> …"
 		},
 		"show …": {
 			"prefix": "show",
 			"description": "show clause",
-			"body": "show ${1:name}$2"
+			"body": "show ${1:name}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">show</span> …"
 		},
 		"hide …": {
 			"prefix": "hide",
 			"description": "hide clause",
-			"body": "hide ${1:name}$2"
+			"body": "hide ${1:name}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--other syntax--import syntax--dart\">hide</span> …"
 		},
 		"external …": {
 			"prefix": "external",
 			"description": "external modifier",
-			"body": "external $1"
+			"body": "external $1",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">external</span> …"
 		},
 		"static …": {
 			"prefix": "static",
 			"description": "static modifier",
-			"body": "static $1"
+			"body": "static $1",
+			"rightLabelHTML": "<span class=\"syntax--storage syntax--modifier syntax--dart\">static</span> …"
 		},
 		"covariant …": {
 			"prefix": "covariant",
 			"description": "covariant modifier",
-			"body": "covariant $1"
+			"body": "covariant $1",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">covariant</span> …"
 		},
 		"late …": {
 			"prefix": "late",
 			"description": "late modifier",
-			"body": "late $1"
+			"body": "late $1",
+			"rightLabelHTML": "<span class=\"syntax--storage syntax--modifier syntax--dart\">late</span> …"
 		},
 		"required …": {
 			"prefix": "required",
 			"description": "required modifier",
-			"body": "required $1"
+			"body": "required $1",
+			"rightLabelHTML": "<span class=\"syntax--storage syntax--modifier syntax--dart\">required</span> …"
 		},
 		"final …": {
 			"prefix": "final",
 			"description": "final declaration",
-			"body": "final ${1:name}$2"
+			"body": "final ${1:name}$2",
+			"rightLabelHTML": "<span class=\"syntax--storage syntax--modifier syntax--dart\">final</span> …"
 		},
 		"const …": {
 			"prefix": "const",
 			"description": "const declaration",
-			"body": "const ${1:name}$2"
+			"body": "const ${1:name}$2",
+			"rightLabelHTML": "<span class=\"syntax--storage syntax--modifier syntax--dart\">const</span> …"
 		},
 		"var …": {
 			"prefix": "var",
 			"description": "var declaration",
-			"body": "var ${1:name}$2"
+			"body": "var ${1:name}$2",
+			"rightLabelHTML": "<span class=\"syntax--storage syntax--type syntax--primitive syntax--dart\">var</span> …"
 		},
 		"factory …(…) {…}": {
 			"prefix": "factory",
 			"description": "factory declaration",
-			"body": "factory ${1:name}($2) {\n\t$3\n}$4"
+			"body": "factory ${1:name}($2) {\n\t$3\n}$4",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">factory</span> …(…) {…}"
 		},
 		"call(…) {…}": {
 			"prefix": "call",
 			"description": "call declaration",
-			"body": "call($1) {\n\t$2\n}$3"
+			"body": "call($1) {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--entity syntax--name syntax--function syntax--dart\">call</span>(…) {…}"
 		},
 		"operator …(…) {…}": {
 			"prefix": "operator",
 			"description": "operator overloading",
-			"body": "operator ${1:==}($2) {\n\t$3\n}$4"
+			"body": "operator ${1:==}($2) {\n\t$3\n}$4",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">operator</span> …(…) {…}"
 		},
 		"get … {…}": {
 			"prefix": "get",
 			"description": "getter",
-			"body": "get ${1:name} {\n\t$2\n}$3"
+			"body": "get ${1:name} {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">get</span> … {…}"
 		},
 		"set …(…) {…}": {
 			"prefix": "set",
 			"description": "setter",
-			"body": "set ${1:name}(${2:value}) {\n\t$3\n}$4"
+			"body": "set ${1:name}(${2:value}) {\n\t$3\n}$4",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">set</span> …(…) {…}"
 		},
 		"… …(…) {…}": {
 			"prefix": "void",
 			"description": "synchronous function declaration",
-			"body": "${1:Type} ${2:name}($3) {\n\t$4\n}$5"
+			"body": "${1:Type} ${2:name}($3) {\n\t$4\n}$5",
+			"rightLabelHTML": "… …(…) {…}"
 		},
 		"Future<…> …(…) async {…}": {
 			"prefix": "Future<void>",
 			"description": "asynchronous function declaration",
-			"body": "Future<${1:Type}> ${2:name}($3) async {\n\t$4\n}$5"
+			"body": "Future<${1:Type}> ${2:name}($3) async {\n\t$4\n}$5",
+			"rightLabelHTML": "<span class=\"syntax--support syntax--class syntax--dart\">Future</span><span class=\"syntax--keyword syntax--operator syntax--comparison syntax--dart\">&lt;</span>…<span class=\"syntax--keyword syntax--operator syntax--comparison syntax--dart\">&gt;</span> …(…) <span class=\"syntax--keyword syntax--control syntax--dart\">async</span> {…}"
 		},
 		"Iterable<…> …(…) sync* {…}": {
 			"prefix": "Iterable<dynamic>",
 			"description": "synchronous generator function declaration",
-			"body": "Iterable<${1:Type}> ${2:name}($3) sync* {\n\t$4\n}$5"
+			"body": "Iterable<${1:Type}> ${2:name}($3) sync* {\n\t$4\n}$5",
+			"rightLabelHTML": "<span class=\"syntax--support syntax--class syntax--dart\">Iterable</span><span class=\"syntax--keyword syntax--operator syntax--comparison syntax--dart\">&lt;</span>…<span class=\"syntax--keyword syntax--operator syntax--comparison syntax--dart\">&gt;</span> …(…) <span class=\"syntax--keyword syntax--control syntax--dart\">sync</span><span class=\"syntax--keyword syntax--operator syntax--arithmetic syntax--dart\">*</span> {…}"
 		},
 		"Stream<…> …(…) async* {…}": {
 			"prefix": "Stream<dynamic>",
 			"description": "asynchronous generator function declaration",
-			"body": "Stream<${1:Type}> ${2:name}($3) async* {\n\t$4\n}$5"
+			"body": "Stream<${1:Type}> ${2:name}($3) async* {\n\t$4\n}$5",
+			"rightLabelHTML": "<span class=\"syntax--support syntax--class syntax--dart\">Stream</span><span class=\"syntax--keyword syntax--operator syntax--comparison syntax--dart\">&lt;</span>…<span class=\"syntax--keyword syntax--operator syntax--comparison syntax--dart\">&gt;</span> …(…) <span class=\"syntax--keyword syntax--control syntax--dart\">async</span><span class=\"syntax--keyword syntax--operator syntax--arithmetic syntax--dart\">*</span> {…}"
 		},
 		"{…}": {
 			"prefix": "sync",
 			"description": "synchronous function body",
-			"body": "{\n\t$1\n}$2"
+			"body": "{\n\t$1\n}$2",
+			"rightLabelHTML": "{…}"
 		},
 		"async {…}": {
 			"prefix": "async",
 			"description": "asynchronous function body",
-			"body": "async {\n\t$1\n}$2"
+			"body": "async {\n\t$1\n}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">async</span> {…}"
 		},
 		"sync* {…}": {
 			"prefix": "sync*",
 			"description": "synchronous generator function body",
-			"body": "sync* {\n\t$1\n}$2"
+			"body": "sync* {\n\t$1\n}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">sync</span><span class=\"syntax--keyword syntax--operator syntax--arithmetic syntax--dart\">*</span> {…}"
 		},
 		"async* {…}": {
 			"prefix": "async*",
 			"description": "asynchronous generator function body",
-			"body": "async* {\n\t$1\n}$2"
+			"body": "async* {\n\t$1\n}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">async</span><span class=\"syntax--keyword syntax--operator syntax--arithmetic syntax--dart\">*</span> {…}"
 		},
 		"typedef …;": {
 			"prefix": "typedef",
 			"description": "typedef declaration",
-			"body": "typedef ${1:Type};$2"
+			"body": "typedef ${1:Type};$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">typedef</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"abstract class … {…}": {
 			"prefix": "abstract",
 			"description": "abstract class declaration",
-			"body": "abstract class ${1:Type} {\n\t$2\n}$3"
+			"body": "abstract class ${1:Type} {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">abstract</span> <span class=\"syntax--keyword syntax--declaration syntax--dart\">class</span> … {…}"
 		},
 		"class … {…}": {
 			"prefix": "class",
 			"description": "class declaration",
-			"body": "class ${1:Type} {\n\t$2\n}$3"
+			"body": "class ${1:Type} {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">class</span> … {…}"
 		},
 		"mixin … {…}": {
 			"prefix": "mixin",
 			"description": "mixin declaration",
-			"body": "mixin ${1:Type} {\n\t$2\n}$3"
+			"body": "mixin ${1:Type} {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">mixin</span> … {…}"
 		},
 		"extension … on … {…}": {
 			"prefix": "extension",
 			"description": "extension declaration",
-			"body": "extension ${1:Type} on ${2:Type} {\n\t$3\n}$4"
+			"body": "extension ${1:Type} on ${2:Type} {\n\t$3\n}$4",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">extension</span> … <span class=\"syntax--keyword syntax--control syntax--catch-exception syntax--dart\">on</span> … {…}"
 		},
 		"enum … {…}": {
 			"prefix": "enum",
 			"description": "enum declaration",
-			"body": "enum ${1:Type} {$2}$3"
+			"body": "enum ${1:Type} {$2}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">enum</span> … {…}"
 		},
 		"on …": {
 			"prefix": "on",
 			"description": "on clause",
-			"body": "on ${1:Type}$2"
+			"body": "on ${1:Type}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--catch-exception syntax--dart\">on</span> …"
 		},
 		"extends …": {
 			"prefix": "extends",
 			"description": "extends clause",
-			"body": "extends ${1:Type}$2"
+			"body": "extends ${1:Type}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">extends</span> …"
 		},
 		"with …": {
 			"prefix": "with",
 			"description": "with clause",
-			"body": "with ${1:Type}$2"
+			"body": "with ${1:Type}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">with</span> …"
 		},
 		"implements …": {
 			"prefix": "implements",
 			"description": "implements clause",
-			"body": "implements ${1:Type}$2"
+			"body": "implements ${1:Type}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">implements</span> …"
 		},
 		"native": {
 			"prefix": "native",
 			"description": "native annotation",
-			"body": "native$1"
+			"body": "native$1",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--declaration syntax--dart\">native</span>"
 		},
 		"try {…}": {
 			"prefix": "try",
 			"description": "try statement",
-			"body": "try {\n\t$1\n}$2"
+			"body": "try {\n\t$1\n}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--catch-exception syntax--dart\">try</span> {…}"
 		},
 		"catch (…) {…}": {
 			"prefix": "catch",
 			"description": "catch clause",
-			"body": "catch (${1:exception}) {\n\t$2\n}$3"
+			"body": "catch (${1:exception}) {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--catch-exception syntax--dart\">catch</span> (…) {…}"
 		},
 		"finally {…}": {
 			"prefix": "finally",
 			"description": "finally clause",
-			"body": "finally {\n\t$1\n}$2"
+			"body": "finally {\n\t$1\n}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--catch-exception syntax--dart\">finally</span> {…}"
 		},
 		"switch (…) {…}": {
 			"prefix": "switch",
 			"description": "switch statement",
-			"body": "switch (${1:value}) {\n\t$1\n}$2"
+			"body": "switch (${1:value}) {\n\t$1\n}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">switch</span> (…) {…}"
 		},
 		"case …:": {
 			"prefix": "case",
 			"description": "case clause",
-			"body": "case ${1:constant}:$2"
+			"body": "case ${1:constant}:$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">case</span> …<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span>"
 		},
 		"default:": {
 			"prefix": "default",
 			"description": "default clause",
-			"body": "default:$1"
+			"body": "default:$1",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">default</span><span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span>"
 		},
 		"do {…} while (…);": {
 			"prefix": "do",
 			"description": "do statement",
-			"body": "do {\n\t$1\n} while (${2:condition});$3"
+			"body": "do {\n\t$1\n} while (${2:condition});$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">do</span> {…} <span class=\"syntax--keyword syntax--control syntax--dart\">while</span> (…)<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"while (…) {…}": {
 			"prefix": "while",
 			"description": "while statement",
-			"body": "while (${1:condition}) {\n\t$2\n}$3"
+			"body": "while (${1:condition}) {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">while</span> (…) {…}"
 		},
 		"return …;": {
 			"prefix": "return",
 			"description": "return statement",
-			"body": "return$1;$2"
+			"body": "return$1;$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">return</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"rethrow;": {
 			"prefix": "rethrow",
 			"description": "rethrow statement",
-			"body": "rethrow;$1"
+			"body": "rethrow;$1",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">rethrow</span><span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"yield …;": {
 			"prefix": "yield",
 			"description": "yield statement",
-			"body": "yield ${1:value};$3"
+			"body": "yield ${1:value};$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">yield</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"yield* …;": {
 			"prefix": "yieldeach",
 			"description": "yield-each statement",
-			"body": "yield* ${1:iterable};$3"
+			"body": "yield* ${1:iterable};$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">yield</span><span class=\"syntax--keyword syntax--operator syntax--arithmetic syntax--dart\">*</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"break …;": {
 			"prefix": "break",
-			"description": "TODO",
-			"body": "break$1;$2"
+			"description": "break statement",
+			"body": "break$1;$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">break</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"continue …;": {
 			"prefix": "continue",
-			"description": "break statement",
-			"body": "continue$1;$2"
+			"description": "continue statement",
+			"body": "continue$1;$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">continue</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"assert(…);": {
 			"prefix": "assert",
 			"description": "assert statement",
-			"body": "assert(${1:condition});$2"
+			"body": "assert(${1:condition});$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">assert</span>(…)<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span>"
 		},
 		"if (…) …": {
 			"prefix": "if",
 			"description": "if statement",
-			"body": "if (${1:condition}) ${2:value}$3"
+			"body": "if (${1:condition}) ${2:value}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">if</span> (…) …"
 		},
 		"else …": {
 			"prefix": "else",
 			"description": "else clause",
-			"body": "else ${1:value}$2"
+			"body": "else ${1:value}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">else</span> …"
 		},
 		"else if (…) …": {
 			"prefix": "elseif",
 			"description": "else-if clause",
-			"body": "else if (${1:condition}) ${2:value}$3"
+			"body": "else if (${1:condition}) ${2:value}$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">else</span> <span class=\"syntax--keyword syntax--control syntax--dart\">if</span> (…) …"
 		},
 		"for (…; …; …) …": {
 			"prefix": "for",
 			"description": "for statement",
-			"body": "for ($1; $2; $3) ${4:value}$5"
+			"body": "for ($1; $2; $3) ${4:value}$5",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">for</span> (…<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span> …<span class=\"syntax--punctuation syntax--terminator syntax--dart\">;</span> …) …"
 		},
 		"for (… in …) …": {
 			"prefix": "forin",
 			"description": "for-in statement",
-			"body": "for (final ${1:name} in ${2:iterable}) ${3:value}$4"
+			"body": "for (${1:name} in ${2:iterable}) ${3:value}$4",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">for</span> (… <span class=\"syntax--keyword syntax--control syntax--dart\">in</span> …) …"
 		},
 		"await for (… in …) …": {
 			"prefix": "awaitforin",
 			"description": "await-for-in statement",
-			"body": "await for (${1:name} in ${2:iterable}) ${3:value}$4"
+			"body": "await for (${1:name} in ${2:iterable}) ${3:value}$4",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">await</span> <span class=\"syntax--keyword syntax--control syntax--dart\">for</span> (… <span class=\"syntax--keyword syntax--control syntax--dart\">in</span> …) …"
 		},
 		"in …": {
 			"prefix": "in",
 			"description": "in clause",
-			"body": "in ${1:iterable}$2"
+			"body": "in ${1:iterable}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">in</span> …"
 		},
 		"is …": {
 			"prefix": "is",
 			"description": "positive type test",
-			"body": "is ${1:Type}$2"
+			"body": "is ${1:Type}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--operator syntax--dart\">is</span> …"
 		},
 		"is! …": {
 			"prefix": "isnot",
 			"description": "negative type test",
-			"body": "is! ${1:Type}$2"
+			"body": "is! ${1:Type}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--operator syntax--dart\">is</span><span class=\"syntax--keyword syntax--operator syntax--logical syntax--dart\">!</span> …"
 		},
 		"throw …": {
 			"prefix": "throw",
 			"description": "throw expression",
-			"body": "throw ${1:exception}$2"
+			"body": "throw ${1:exception}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--catch-exception syntax--dart\">throw</span> …"
 		},
 		"await …": {
 			"prefix": "await",
 			"description": "await expression",
-			"body": "await ${1:future}$2"
+			"body": "await ${1:future}$2",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--dart\">await</span> …"
 		},
 		"new …": {
 			"prefix": "new",
 			"description": "new expression",
-			"body": "new ${1:Type}($2)$3"
+			"body": "new ${1:Type}($2)$3",
+			"rightLabelHTML": "<span class=\"syntax--keyword syntax--control syntax--new syntax--dart\">new</span> …"
 		},
 		"main(…) {…}": {
 			"prefix": "main",
 			"description": "entry point declaration",
-			"body": "main($1) {\n\t$2\n}$3"
+			"body": "main($1) {\n\t$2\n}$3",
+			"rightLabelHTML": "<span class=\"syntax--entity syntax--name syntax--function syntax--dart\">main</span>(…) {…}"
 		},
 		"deprecated": {
 			"prefix": "deprecated",
-			"body": "deprecated$1"
+			"body": "deprecated$1",
+			"rightLabelHTML": "deprecated<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--storage syntax--modifier syntax--dart\">const</span> <span class=\"syntax--support syntax--class syntax--dart\">Deprecated</span>"
 		},
 		"override": {
 			"prefix": "override",
-			"body": "override$1"
+			"body": "override$1",
+			"rightLabelHTML": "override<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--storage syntax--modifier syntax--dart\">const</span> <span class=\"syntax--support syntax--class syntax--dart\">Object</span>"
+		},
+		"provisional": {
+			"prefix": "provisional",
+			"body": "provisional$1",
+			"rightLabelHTML": "provisional<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--storage syntax--modifier syntax--dart\">const</span> <span class=\"syntax--support syntax--class syntax--dart\">Null</span>"
+		},
+		"proxy": {
+			"prefix": "proxy",
+			"body": "proxy$1",
+			"rightLabelHTML": "proxy<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--storage syntax--modifier syntax--dart\">const</span> <span class=\"syntax--support syntax--class syntax--dart\">Null</span>"
 		},
 		"identical(…, …)": {
 			"prefix": "identical",
-			"body": "identical(${1:value}, ${2:value})$3"
+			"body": "identical(${1:a}, ${2:b})$3",
+			"rightLabelHTML": "<span class=\"syntax--entity syntax--name syntax--function syntax--dart\">identical</span>(a<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--support syntax--class syntax--dart\">Object</span><span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">?</span><span class=\"syntax--punctuation syntax--comma syntax--dart\">,</span> b<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--support syntax--class syntax--dart\">Object</span><span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">?</span>)<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--support syntax--class syntax--dart\">bool</span>"
 		},
 		"identityHashCode(…)": {
 			"prefix": "identityHashCode",
-			"body": "identityHashCode(${1:value})$2"
+			"body": "identityHashCode(${1:object})$2",
+			"rightLabelHTML": "<span class=\"syntax--entity syntax--name syntax--function syntax--dart\">identityHashCode</span>(object<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--support syntax--class syntax--dart\">Object</span><span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">?</span>)<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--support syntax--class syntax--dart\">int</span>"
 		},
 		"print(…)": {
 			"prefix": "print",
-			"body": "print(${1:value})$2"
+			"body": "print(${1:object})$2",
+			"rightLabelHTML": "<span class=\"syntax--entity syntax--name syntax--function syntax--dart\">print</span>(object<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--support syntax--class syntax--dart\">Object</span><span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">?</span>)<span class=\"syntax--keyword syntax--operator syntax--ternary syntax--dart\">:</span> <span class=\"syntax--storage syntax--type syntax--primitive syntax--dart\">void</span>"
 		}
 	}
 }
