@@ -1,15 +1,45 @@
 {
   "name": "language-dart2",
   "version": "0.3.1",
-  "description": "Dart language support in Atom",
+  "description": "Dart language support in Atom and Visual Studio Code",
   "keywords": [
     "language",
     "grammar"
   ],
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
   "repository": "https://github.com/PolariTOON/language-dart2",
   "author": "Tristan LE GODAIS",
+  "publisher": "TrisTOON",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.0.0 <2.0.0",
+    "vscode": "^1.44.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "dart",
+        "extensions": [
+          ".dart"
+        ],
+        "configuration": "./settings/language-dart2.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "dart",
+        "scopeName": "source.dart",
+        "path": "./grammars/language-dart2.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "dart",
+        "path": "./snippets/language-dart2.json"
+      }
+    ]
   }
 }
