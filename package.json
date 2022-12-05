@@ -1,6 +1,6 @@
 {
   "name": "language-dart2",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Dart language support in Atom and Visual Studio Code",
   "keywords": [
     "language",
