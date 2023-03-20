@@ -1,7 +1,9 @@
 {
   "name": "language-dart2",
   "version": "0.4.1",
+  "displayName": "Dart syntax highlighter",
   "description": "Dart language support in Atom, Pulsar and Visual Studio Code",
+  "icon": "./logotypes/language-dart2-200x200.png",
   "keywords": [
     "language",
     "grammar"
